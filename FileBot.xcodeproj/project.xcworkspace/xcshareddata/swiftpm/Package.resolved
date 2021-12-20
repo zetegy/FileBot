@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+          "version": "5.4.4"
+        }
+      },
+      {
+        "package": "Down",
+        "repositoryURL": "https://github.com/johnxnguyen/Down",
+        "state": {
+          "branch": null,
+          "revision": "f34b166be1f1db4aa8f573067e901d72f2a6be57",
+          "version": "0.11.0"
+        }
+      },
+      {
+        "package": "DTPageControl",
+        "repositoryURL": "https://github.com/demianturner/DTPageControl",
+        "state": {
+          "branch": null,
+          "revision": "87424a0cc60e1a1556fe542f42091d580f0028f3",
+          "version": "1.0.4"
+        }
+      },
+      {
+        "package": "LaunchAtLogin",
+        "repositoryURL": "https://github.com/sindresorhus/LaunchAtLogin",
+        "state": {
+          "branch": null,
+          "revision": "e8171b3e38a2816f579f58f3dac1522aa39efe41",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "PZHelpDesk",
+        "repositoryURL": "https://github.com/philzet/PZHelpDesk",
+        "state": {
+          "branch": "master",
+          "revision": "b9dfaeade2122b5c8703f6cde486d2d3ebff3ba8",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

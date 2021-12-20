@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" id="BdL-1z-TfR" customClass="PredicateView" customModule="FinderBot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="688" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="a1i-IY-mJB">
+                    <rect key="frame" x="-2" y="2" width="32" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="dDV-UO-e5W"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="If" id="jtY-de-2Bz">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ob6-PL-gJd">
+                    <rect key="frame" x="33" y="-4" width="471" height="25"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="R9h-cY-mxn" id="9Co-4u-8Da">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="Ugu-Ur-P4q">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="R9h-cY-mxn"/>
+                                <menuItem title="Item 2" id="ipk-Ll-gzO"/>
+                                <menuItem title="Item 3" id="Wsa-iH-NN2"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="predicateButtonChanged:" target="BdL-1z-TfR" id="Gxx-S4-BQd"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ixf-hH-5A5">
+                    <rect key="frame" x="505" y="-4" width="78" height="25"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="BX8-3Q-EQR" id="E2j-Dm-sUu">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="8j3-0W-O3c">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="BX8-3Q-EQR"/>
+                                <menuItem title="Item 2" id="2t0-vy-DTg"/>
+                                <menuItem title="Item 3" id="XKj-7D-e3x"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="predicateTypeButtonChanged:" target="BdL-1z-TfR" id="oad-Fw-Ait"/>
+                    </connections>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dYe-pX-pOR">
+                    <rect key="frame" x="585" y="2" width="8" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="," id="0Wm-Pl-IqN">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="34d-Ej-tWc">
+                    <rect key="frame" x="599" y="1" width="19" height="18"/>
+                    <buttonCell key="cell" type="inline" title=" " bezelStyle="inline" image="minus" catalog="system" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wEO-RY-sXU">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystemBold"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="removeConditionClicked:" target="BdL-1z-TfR" id="rKN-Yj-4T8"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UOy-Te-V0S">
+                    <rect key="frame" x="626" y="1" width="62" height="18"/>
+                    <buttonCell key="cell" type="inline" title="And If" bezelStyle="inline" image="plus" catalog="system" imagePosition="leading" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Tyf-iK-Kbw">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystemBold"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="addConditionClicked:" target="BdL-1z-TfR" id="LCx-hW-nvG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <visibilityPriorities>
+                <integer value="1000"/>
+                <integer value="1000"/>
+                <integer value="1000"/>
+                <integer value="1000"/>
+                <integer value="1000"/>
+                <integer value="1000"/>
+            </visibilityPriorities>
+            <customSpacing>
+                <real value="3.4028234663852886e+38"/>
+                <real value="3.4028234663852886e+38"/>
+                <real value="3.4028234663852886e+38"/>
+                <real value="3.4028234663852886e+38"/>
+                <real value="3.4028234663852886e+38"/>
+                <real value="3.4028234663852886e+38"/>
+            </customSpacing>
+            <connections>
+                <outlet property="addConditionButton" destination="UOy-Te-V0S" id="BsW-Yq-EGL"/>
+                <outlet property="ifLabel" destination="a1i-IY-mJB" id="ufn-Fe-tl7"/>
+                <outlet property="predicateButton" destination="Ob6-PL-gJd" id="h5W-xl-kjU"/>
+                <outlet property="predicateTypeButton" destination="Ixf-hH-5A5" id="6v3-Oy-LRY"/>
+                <outlet property="removeConditionButton" destination="34d-Ej-tWc" id="vac-kg-CT7"/>
+            </connections>
+            <point key="canvasLocation" x="246.5" y="143"/>
+        </stackView>
+    </objects>
+    <resources>
+        <image name="minus" catalog="system" width="14" height="4"/>
+        <image name="plus" catalog="system" width="14" height="13"/>
+    </resources>
+</document>

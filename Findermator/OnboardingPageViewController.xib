@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="OnboardingPageViewController" customModule="FinderBot" customModuleProvider="target">
+            <connections>
+                <outlet property="additionalContentsStackView" destination="Brt-qa-0CE" id="LQp-Sa-XWB"/>
+                <outlet property="descriptionLabel" destination="Ze8-oh-Hgv" id="pe9-Cj-FkZ"/>
+                <outlet property="mainImageView" destination="kzJ-Ru-t9E" id="Mkn-gO-hlR"/>
+                <outlet property="titleLabel" destination="IJU-uz-sOE" id="Nrb-de-sgO"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <viewController id="wWT-Y4-TYA" customClass="OnboardingPageViewController" customModule="FinderBot" customModuleProvider="target">
+            <connections>
+                <outlet property="additionalContentsStackView" destination="Brt-qa-0CE" id="Bwz-8U-amU"/>
+                <outlet property="descriptionLabel" destination="Ze8-oh-Hgv" id="X8Q-xN-tZv"/>
+                <outlet property="mainImageView" destination="kzJ-Ru-t9E" id="vHh-ac-hTh"/>
+                <outlet property="titleLabel" destination="IJU-uz-sOE" id="yRp-UQ-2MY"/>
+                <outlet property="view" destination="nyI-fe-08n" id="KL7-Mr-1J2"/>
+            </connections>
+        </viewController>
+        <customView id="nyI-fe-08n">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="428"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Go7-JU-i21">
+                    <rect key="frame" x="40" y="50" width="110" height="328"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kzJ-Ru-t9E">
+                            <rect key="frame" x="30" y="278" width="50" height="50"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="IOD-sf-xE4"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IJU-uz-sOE">
+                            <rect key="frame" x="10" y="232" width="90" height="38"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="kiF-zB-lEC">
+                                <font key="font" metaFont="systemBold" size="32"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Ze8-oh-Hgv">
+                            <rect key="frame" x="7" y="208" width="96" height="16"/>
+                            <textFieldCell key="cell" selectable="YES" alignment="center" title="Multiline Label" id="fUa-1v-aIG">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" ambiguous="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-qa-0CE">
+                            <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+                        </stackView>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Go7-JU-i21" secondAttribute="trailing" constant="40" id="Bha-fa-GFp"/>
+                <constraint firstItem="Go7-JU-i21" firstAttribute="leading" secondItem="nyI-fe-08n" secondAttribute="leading" constant="40" id="Ekh-A2-IgI"/>
+                <constraint firstAttribute="bottom" secondItem="Go7-JU-i21" secondAttribute="bottom" constant="50" id="GV3-jI-oui"/>
+                <constraint firstItem="Go7-JU-i21" firstAttribute="top" secondItem="nyI-fe-08n" secondAttribute="top" constant="50" id="HWs-KK-HMh"/>
+            </constraints>
+            <point key="canvasLocation" x="348" y="197"/>
+        </customView>
+    </objects>
+</document>
