@@ -218,7 +218,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     lazy var launchAtLoginButton: NSButton = {
         let button = NSButton(title: "Launch at Login", target: self, action: #selector(launchAtLoginButtonClicked))
         button.setButtonType(.switch)
-        button.state = LaunchAtLogin.isEnabled ? .on : .off
+        button.state = .off
         return button
     }()
     
