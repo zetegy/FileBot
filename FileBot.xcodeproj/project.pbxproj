@@ -95,6 +95,7 @@
 		176AE27A2710C55B0078A6AB /* RuleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuleView.xib; sourceTree = "<group>"; };
 		176AE27C2710C5670078A6AB /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
 		176AE27E2710C5FF0078A6AB /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		1785FC5A277103AF00E41689 /* libswift_Concurrency.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswift_Concurrency.tbd; path = usr/lib/swift/libswift_Concurrency.tbd; sourceTree = SDKROOT; };
 		178C4BBB2724BD7100DBD3C2 /* FinderBot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinderBot-Bridging-Header.h"; sourceTree = "<group>"; };
 		178C4BBC2724BD7200DBD3C2 /* PZAutocompleteTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZAutocompleteTextView.h; sourceTree = "<group>"; };
 		178C4BBD2724BD7200DBD3C2 /* PZAutocompleteTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZAutocompleteTextView.m; sourceTree = "<group>"; };
@@ -158,6 +159,7 @@
 			children = (
 				175C471A2710ACCB0070F058 /* Findermator */,
 				175C47192710ACCB0070F058 /* Products */,
+				1785FC59277103AF00E41689 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,6 +224,14 @@
 				175C47322710B0570070F058 /* FSEvents.swift */,
 			);
 			path = FSEvents;
+			sourceTree = "<group>";
+		};
+		1785FC59277103AF00E41689 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1785FC5A277103AF00E41689 /* libswift_Concurrency.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		17EF4FFF2725D0FF002A2E72 /* Documentation */ = {
@@ -548,7 +558,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = D7DS2U3H59;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readwrite;
@@ -583,7 +593,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = D7DS2U3H59;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readwrite;

@@ -79,6 +79,7 @@ class ImportConfirmationViewController: NSViewController {
                   _ = alert.runModal()
                   return
               }
+        directory.isActive = isActivated
         directory.url = folderURL
         DirectoryListViewController.shared?.addDirectory(directory, atExistingId: nil)
         
